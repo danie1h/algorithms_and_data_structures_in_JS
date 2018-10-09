@@ -1,0 +1,21 @@
+{
+  "name": "algorithms_and_data_structures_in_js",
+  "version": "1.0.0",
+  "description": "A resource for sorting, searching, lists, stacks, queues, trees and graphs in javascript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "javascript",
+    "algorithms",
+    "data_structures"
+  ],
+  "author": "www.github.com/danie1h",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
