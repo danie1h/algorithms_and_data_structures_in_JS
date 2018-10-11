@@ -1,4 +1,4 @@
-const bubbleSort = (unsortedArray) => {
+export const bubbleSort = (unsortedArray) => {
   const sortedArray = [...unsortedArray]
 
   for (let i = 0; i < sortedArray.length - 1; i += 1) {
@@ -9,5 +9,3 @@ const bubbleSort = (unsortedArray) => {
 
   return sortedArray
 }
-
-export default bubbleSort

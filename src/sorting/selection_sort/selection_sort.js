@@ -1,4 +1,4 @@
-const selectionSort = (unsortedArr) => {
+export const selectionSort = (unsortedArr) => {
   const sortedArr = [...unsortedArr]
 
   for (let i = 0; i < sortedArr.length - 1; i++) {
@@ -12,6 +12,6 @@ const selectionSort = (unsortedArr) => {
       [sortedArr[i], sortedArr[indexOfMinVal]] = [sortedArr[indexOfMinVal], sortedArr[i]]
     }
   }
-}
 
-export default selectionSort
+  return sortedArr
+}

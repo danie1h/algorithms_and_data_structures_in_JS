@@ -1,4 +1,4 @@
-const insertionSort = (unsortedArr) => {
+export const insertionSort = (unsortedArr) => {
   const sortedArr = [...unsortedArr]
 
   for (let i = 1; i < sortedArr.length; i += 1) {
@@ -12,6 +12,6 @@ const insertionSort = (unsortedArr) => {
       }
     }
   }
-}
 
-export default insertionSort
+  return sortedArr
+}
