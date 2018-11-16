@@ -20,7 +20,10 @@ const partition = (arr, leftPointer, rightPointer) => {
       rightPointer -= 1
     }
     if (leftPointer <= rightPointer) {
-      [arr[leftPointer], arr[rightPointer]] = [arr[rightPointer], arr[leftPointer]]
+      ;[arr[leftPointer], arr[rightPointer]] = [
+        arr[rightPointer],
+        arr[leftPointer],
+      ]
       leftPointer += 1
       rightPointer -= 1
     }

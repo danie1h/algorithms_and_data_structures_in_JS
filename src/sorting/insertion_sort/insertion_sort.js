@@ -1,4 +1,4 @@
-export const insertionSort = (unsortedArr) => {
+export const insertionSort = unsortedArr => {
   const sortedArr = [...unsortedArr]
 
   for (let i = 1; i < sortedArr.length; i += 1) {
@@ -6,7 +6,10 @@ export const insertionSort = (unsortedArr) => {
       let currElement = i
       for (let j = i - 1; j >= 0; j -= 1) {
         if (sortedArr[currElement] < sortedArr[j]) {
-          [sortedArr[currElement], sortedArr[j]] = [sortedArr[j], sortedArr[currElement]]
+          ;[sortedArr[currElement], sortedArr[j]] = [
+            sortedArr[j],
+            sortedArr[currElement],
+          ]
           currElement = j
         }
       }

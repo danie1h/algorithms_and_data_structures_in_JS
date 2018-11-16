@@ -1,4 +1,4 @@
-export const selectionSort = (unsortedArr) => {
+export const selectionSort = unsortedArr => {
   const sortedArr = [...unsortedArr]
 
   for (let i = 0; i < sortedArr.length - 1; i++) {
@@ -9,7 +9,10 @@ export const selectionSort = (unsortedArr) => {
       }
     }
     if (indexOfMinVal !== i) {
-      [sortedArr[i], sortedArr[indexOfMinVal]] = [sortedArr[indexOfMinVal], sortedArr[i]]
+      ;[sortedArr[i], sortedArr[indexOfMinVal]] = [
+        sortedArr[indexOfMinVal],
+        sortedArr[i],
+      ]
     }
   }
 

@@ -18,9 +18,15 @@ describe('Singly Linked List', () => {
     expect(list.findByIndex(0)).to.be.include({ data: 'item1' })
     expect(list.findByIndex(1)).to.be.include({ data: 'item2' })
 
-    expect(list.findByIndex(-1)).to.equal('Invalid input. Please provide a valid index to search.')
-    expect(list.findByIndex(3)).to.equal('Invalid input. Please provide a valid index to search.')
-    expect(list.findByIndex('abc')).to.equal('Invalid input. Please provide a valid index to search.')
+    expect(list.findByIndex(-1)).to.equal(
+      'Invalid input. Please provide a valid index to search.',
+    )
+    expect(list.findByIndex(3)).to.equal(
+      'Invalid input. Please provide a valid index to search.',
+    )
+    expect(list.findByIndex('abc')).to.equal(
+      'Invalid input. Please provide a valid index to search.',
+    )
   })
 
   it('returns the length of the list', () => {
@@ -51,11 +57,11 @@ describe('Singly Linked List', () => {
     list.removeByIndex(1)
 
     expect(list.length).to.equal(2)
-    expect(list.findByIndex(0)).to.be.include({data: 'item1'})
-    expect(list.findByIndex(1)).to.be.include({data: 'item3'})
+    expect(list.findByIndex(0)).to.be.include({ data: 'item1' })
+    expect(list.findByIndex(1)).to.be.include({ data: 'item3' })
 
     list.removeByIndex(0)
     expect(list.length).to.equal(1)
-    expect(list.findByIndex(0)).to.be.include({data: 'item3'})
+    expect(list.findByIndex(0)).to.be.include({ data: 'item3' })
   })
 })

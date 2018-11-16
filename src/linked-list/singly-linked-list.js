@@ -1,14 +1,14 @@
-function Node (data) {
+function Node(data) {
   this.data = data
   this.next = null
 }
 
-function LinkedList () {
+function LinkedList() {
   this.head = null
   this.length = 0
 }
 
-LinkedList.prototype.add = function (data) {
+LinkedList.prototype.add = function(data) {
   const addedNode = new Node(data)
 
   if (this.length === 0) {
@@ -25,11 +25,11 @@ LinkedList.prototype.add = function (data) {
   this.length++
 }
 
-LinkedList.prototype.length = function () {
+LinkedList.prototype.length = function() {
   return this.length
 }
 
-LinkedList.prototype.findByIndex = function (index) {
+LinkedList.prototype.findByIndex = function(index) {
   if (typeof index !== 'number' || index < 0 || index >= this.length) {
     return 'Invalid input. Please provide a valid index to search.'
   } else {
@@ -46,7 +46,7 @@ LinkedList.prototype.findByIndex = function (index) {
   }
 }
 
-LinkedList.prototype.removeByIndex = function (index) {
+LinkedList.prototype.removeByIndex = function(index) {
   if (typeof index !== 'number' || index < 0 || index >= this.length) {
     return 'Invalid input. Please provide a valid index in order to remove an item.'
   } else {

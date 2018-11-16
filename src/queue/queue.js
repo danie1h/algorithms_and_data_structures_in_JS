@@ -1,24 +1,24 @@
 function Queue() {
-  let _list = [];
+  let _list = []
 
-  this.add = (data) => {
-    _list.unshift(data);
+  this.add = data => {
+    _list.unshift(data)
   }
 
   this.dequeue = () => {
-    _list.shift();
+    _list.shift()
   }
 
   this.contents = () => {
-    return _list;
+    return _list
   }
 
   this.peek = () => {
-    return _list[0];
+    return _list[0]
   }
 
   this.length = () => {
-    return _list.length;
+    return _list.length
   }
 }
 

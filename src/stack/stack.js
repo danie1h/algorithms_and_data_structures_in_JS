@@ -1,15 +1,15 @@
 export function Stack() {
-    this.list = []
-  }
+  this.list = []
+}
 
-  Stack.prototype.add = function(data) {
-    this.list.push(data)
-  }
+Stack.prototype.add = function(data) {
+  this.list.push(data)
+}
 
-  Stack.prototype.remove = function() {
-    this.list.pop()
-  }
+Stack.prototype.remove = function() {
+  this.list.pop()
+}
 
-  Stack.prototype.peek = function() {
-    return this.list[this.list.length - 1]
-  }
+Stack.prototype.peek = function() {
+  return this.list[this.list.length - 1]
+}

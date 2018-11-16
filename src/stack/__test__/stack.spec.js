@@ -12,7 +12,6 @@ describe('Stack Validations', () => {
     expect(stack.list).to.be.an('array').that.is.empty
   })
 
-
   it('A new item will be created at the end of the stack', () => {
     const stack = new Stack()
     stack.add('item1')
